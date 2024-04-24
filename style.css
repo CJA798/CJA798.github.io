@@ -77,7 +77,11 @@ body {
 /* For the solid horizontal rule */
 .solid {
     border-top: 1px solid #ffffff; /* Solid border style */
-    margin: 40px 40%; /* Space above and below the divider */
+    margin: 45px 40%; /* Space above and below the divider */
+}
+.tiny-solid {
+    border-top: 1px solid #ffffff; /* Solid border style */
+    margin: 20px 49%; /* Space above and below the divider */
 }
 
 .empty {
