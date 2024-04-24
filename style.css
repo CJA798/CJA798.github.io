@@ -82,6 +82,22 @@ body {
 }
 
 
+
+.cv li {
+    font-size: 16px;
+    font-weight: lighter;
+    font-variant: normal;
+}
+/* Center the default list markers */
+ul {
+    list-style-position: inside; /* Move the markers inside the list items */
+}
+
+ol li {
+    text-align: center; /* Center the content (including the markers) */
+}
+
+
 .footer {
     position: fixed;
     bottom: 0;
