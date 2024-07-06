@@ -120,3 +120,25 @@ ol li {
     border-top-right-radius: 6px;
     box-shadow: 0px -15px 15px rgba(0, 0, 0, 1);
 }
+
+.image-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-list ul {
+    list-style-type: disc; /* Default bullet points */
+    max-width: 500px; /* Adjust to desired max width for wrapping */
+    word-wrap: break-word; /* Ensure words wrap correctly */
+}
+
+.image-list li {
+    margin-bottom: 20px; /* Add spacing between bullet points */
+}
+
+.image-list h2{
+    margin-top: 75px; /* Add spacing above the title */
+    margin-bottom: 25px; /* Add spacing below the title */
+}
