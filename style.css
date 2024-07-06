@@ -136,6 +136,7 @@ ol li {
 
 .image-list li {
     margin-bottom: 20px; /* Add spacing between bullet points */
+    max-width: 500px; /* Adjust to desired max width for wrapping */
 }
 
 .image-list h2{
