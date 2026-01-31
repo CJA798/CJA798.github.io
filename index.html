@@ -1,245 +1,429 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
-    <title>CJA Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Anzola | Robotics Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body>    
-    <div class="title">
-        <pre>                                                                                                         
+<body>
 
- ██████╗ █████╗ ██████╗ ██╗      ██████╗ ███████╗     █████╗ ███╗   ██╗███████╗ ██████╗ ██╗      █████╗ 
-██╔════╝██╔══██╗██╔══██╗██║     ██╔═══██╗██╔════╝    ██╔══██╗████╗  ██║╚══███╔╝██╔═══██╗██║     ██╔══██╗
-██║     ███████║██████╔╝██║     ██║   ██║███████╗    ███████║██╔██╗ ██║  ███╔╝ ██║   ██║██║     ███████║
-██║     ██╔══██║██╔══██╗██║     ██║   ██║╚════██║    ██╔══██║██║╚██╗██║ ███╔╝  ██║   ██║██║     ██╔══██║
-╚██████╗██║  ██║██║  ██║███████╗╚██████╔╝███████║    ██║  ██║██║ ╚████║███████╗╚██████╔╝███████╗██║  ██║
- ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚══════╝    ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
-
- - M E C H A T R O N I C S    E N G I N E E R -
-            <a href="https://www.linkedin.com/in/carlos-anzola/" target="_blank" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/CJA798" target="_blank" class="icon github"><i class="fab fa-github"></i></a>
-        </pre>    
+<nav>
+  <div class="nav-content">
+    <span class="nav-logo">C. Anzola</span>
+    <div class="nav-links">
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
     </div>
+  </div>
+</nav>
 
-    <div class="cv">
-        <hr class="solid">
-        <h1>- E D U C A T I O N -</h1>
-        <hr class="solid">
+<main>
 
-        <h2>Northeastern University - Boston, MA</h2>
-        <p1>Master of Science in Robotics (ongoing)</p1>
+  <section id="hero">
+    <div class="hero-header">
+      <h1>Carlos Anzola</h1>
+      <span class="status-badge">M.S. Robotics Candidate @ Northeastern</span>
+    </div>
+    
+    <p class="hero-focus">
+      Mechatronics engineer focused on designing and building robotic systems from scratch, 
+      with experience across <strong>mechanical</strong>, <strong>electrical</strong>, and <strong>software</strong> domains, 
+      and an emphasis on <strong>sensing</strong> and <strong>perception</strong>.
+    </p>
 
-        <hr class="tiny-solid">
+    <div class="contact-bar">
+      <a href="mailto:anzolacastellanos.c@northeastern.edu" class="btn btn-primary">Email Me</a>
+      <a href="https://github.com/cja798" class="btn btn-text">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/carlos-anzola/" class="btn btn-text">LinkedIn ↗</a>
+      <a href="legacy/" class="btn btn-text">Legacy Portfolio ↗</a>
+    </div>
+  </section>
 
-        <h2>University of North Carolina at Asheville & North Carolina State University - Asheville, NC</h2>
-        <p1>Joint Bachelor of Science in Engineering – Mechatronics Concentration</p1>
+  <hr class="divider">
 
-        <hr class="tiny-solid">
+  <section id="education">
+    <h2>Education</h2>
+    <div class="grid-2-col">
+      <div class="edu-card">
+        <h3>M.S. Robotics - Computer Science Concentration</h3>
+        <span class="school">Northeastern University | Boston, MA</span>
+        <span class="date">Ongoing</span>
+        <p class="coursework"><strong>Focus:</strong> Autonomous Field Robotics, Mobile Robotics, Robot Sensing & Navigation,
+             Pattern Recognition, Image Processing & Computer Vision, Reinforcement Learning.</p>
+      </div>
+      <div class="edu-card">
+        <h3>B.S. Mechatronics Engineering</h3>
+        <span class="school">UNC & NC State</span>
+        <span class="date">Joint Degree Program</span>
+        <p class="coursework"><strong>Focus:</strong> Embedded Systems, Control Systems, Digital System Design,
+            Mechatronics System Modeling, Robotics and Autonomous Systems, Electric Circuits, Logic Design.</p>
+      </div>
+    </div>
+  </section>
 
-        <h2>Central Piedmont Community College - Charlotte, NC</h2>
-        <p1>Associate of Applied Science in Mechanical Engineering Technology</p1>
-        <p1>Certificate in Mechanical CAD Operation</p1>
+  <section id="skills">
+    <h2>Technical Competencies</h2>
+    <div class="skill-grid">
+      <div class="skill-group">
+        <h4>Software & Control</h4>
+        <div class="tech-stack">
+          <span>C++</span> <span>Python</span> <span>ROS1/2</span> <span>MATLAB</span> <span>Linux</span> <span>Git</span> <span>OpenCV</span> <span>TensorFlow</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Hardware & Mechanical</h4>
+        <div class="tech-stack">
+          <span>SolidWorks</span> <span>Circuit Design</span> <span>Soldering</span> <span>3D Printing</span> <span>Laser Cutting</span> <span>Waterjet</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="portfolio">
+    <h2>Engineering Portfolio</h2>
+    <p class="section-intro">Selected academic projects and professional experience.</p>
+
+    <!-- NeuROAM -->
+    <article class="portfolio-entry">
+      <header class="entry-header">
+        <div class="entry-meta">
+          <span class="type-tag">Research Project</span>
+          <span class="date">Institute for Experiential Robotics: Field Robotics Lab</span>
+        </div>
+        <h3>NeuROAM: Robotic Observation & Mapping Payload</h3>
+        <div class="tech-stack">
+          <span>SolidWorks</span> <span>ROS2</span> <span>Rapid Prototyping</span> <span>Sensor Fusion</span>
+        </div>
+      </header>
+
+      <div class="entry-content">
+        <p><strong>Objective:</strong> Design a modular sensor payload (LiDAR, Stereo Camera, IMU, Radio, GPS) capable of mounting on different robot platforms (Boston Dynamics Spot, Unitree Go2|Go2W|G1, AgileX Hunter|Scout).</p>
         
-        <hr class="solid">
-        <h1>- E X P E R I E N C E -</h1>
-        <hr class="solid">
+        <div class="media-gallery">
+          <figure>
+            <img src="assets/neuroam_payload.gif" alt="NeuROAM Assembly">
+            <figcaption>CAD Assembly.</figcaption>
+          </figure>
+          <figure>
+             <img src="assets/neuroam_robots_static.JPG" alt="Robots with NeuROAM payloads mounted ready to collect data">
+             <figcaption>Robots with NeuROAM payloads mounted ready to collect data.</figcaption>
+          </figure>
 
-        <h2>Freelance Software Developer | Custom Data Parsing and Reporting Tool for Pharmaceutical Protocols</h2>
-        <ul>
-            <li>Developed a Python-based application to extract and organize data from pharmaceutical protocol reports, ensuring accuracy and consistency in generated outputs.</li>
-            <li>Designed and implemented a user-friendly GUI to automate report generation, improving efficiency and ensuring compliance with industry-specific formatting standards.
-            </li>
-        </ul>
-        <hr class="tiny-solid">
+          <figure class="full-width">
+            <img src="assets/neuroam_team.JPG" alt="Team Photo">
+            <figcaption>NeuROAM Team.</figcaption>
+          </figure>
 
-        <h2>Research Collaborator @ University of North Carolina - Asheville</h2>
-        <ul>
-            <li>Developed a comprehensive UI for real-time EEG signal processing, enabling seamless data collection from a BCI Headset and supporting flexible data loading options.</li>
-            <li>Implemented signal processing capabilities, including customizable preprocessing and support for model loading, training, and testing with datasets and live data streams.</li>
-        </ul>
-        <hr class="tiny-solid">
-        <h2>Research Collaborator @ North Carolina State University</h2>
-        <ul>
-            <li>Developed a drone-based computer vision system to combat Lygodium Microphyllum in Florida, deploying it on an NVIDIA Jetson Nano with a ZED 2i stereo camera.</li>
-            <li>Applied visual odometry and depth estimation techniques, enhancing spatial awareness for improved navigation and efficient data collection</li>
-            <li>Implemented segNet for semantic segmentation and SSD-MobileNet V2 for precise object detection, ensuring accurate identification of Lygodium microphyllum to facilitate targeted interventions.</li>
-        </ul>
-        <hr class="tiny-solid">
-        <h2>Engineering Intern @ Auria Solutions</h2>
-        <ul>
-            <li>Led the development of a comprehensive program to automate the process of graph generation in Excel, leveraging data from multiple CSV files originating from a thermocouple data logger.</li>
-        </ul>
-        
-
-        <hr class="solid">
-        <h1>- P R O J E C T S -</h1>
-        <hr class="solid">
-
-        <h2>NeuROAM (In Progress...)</h2>
-        <h2>Northeastern University Robotic Observation and Mapping</h2>
-
-        <div class="image-list">
-            <img src="assets/PAYLOAD_600.png" />
-            <video controls loop autoplay muted>
-                <source src="assets/spot_lidar_small.mp4" type="video/mp4">
+          <figure>
+            <video autoplay loop muted playsinline controls preload="metadata">
+                <source src="assets/neuroam_robots_running.mp4#t=2,18" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <ul>
-                <li>Designed and built a sensor payload for multiplatform robots. The payload includes a stereo camera pair, LiDAR, IMU, GPS, and radio. The robots include Boston Dynamics SPOT, Unitree dogs Go2, Go2W & G1 humanoid, and Agile-X Scout & Hunter.</li>
-                <li>Fabricated custom-length cables with a variety of connectors (JST, Dupont, USB, barrel jack, Ethernet), including crimping, sleeving, and heatshrink finishing.</li>
-                <li>Developed and maintained full CAD assemblies in SolidWorks, supporting mechanical integration across different robot platforms.</li>
-                <li>Designed and manufactured custom dampers to reduce vibrations affecting the IMU.</li>
-                <li>Employed different manufacturing techniques such as 3D printing, laser cutting, waterjetting, tapping, and drilling.</li>
-                <li>Assembled and deployed 8 complete payloads, with routine inspection and hardware maintenance to ensure continued reliability in field operations.</li>
-            </ul>
+            <figcaption>Robots in operation with NeuROAM payloads.</figcaption>
+          </figure>
+          
+          <figure>
+             <img src="assets/neuroam_assembled_payloads.JPG" alt="SolidWorks Exploded View">
+             <figcaption>Assembled payloads.</figcaption>
+          </figure>
+          <figure>
+             <img src="assets/neuroam_payload_inside.JPG" alt="SolidWorks Exploded View">
+             <figcaption>Inside view of the payload showing component layout.</figcaption>
+          </figure>
+
+          <figure>
+             <img src="assets/neuroam_g1_with_backpack.JPG" alt="SolidWorks Exploded View">
+             <figcaption>Unitree G1 humanoid with NeuROAM payload mounted.</figcaption>
+          </figure>
+
+          <figure>
+             <img src="assets/neuroam_g1_with_payload_back.JPG" alt="SolidWorks Exploded View">
+             <figcaption>Rear view of Unitree G1 humanoid with updated payload.</figcaption>
+          </figure>
+          <figure>
+             <img src="assets/neuroam_g1_with_payload_front.JPG" alt="SolidWorks Exploded View">
+             <figcaption>Front view of Unitree G1 humanoid with updated payload.</figcaption>
+          </figure>
+
+          
         </div>
 
-        <hr class="tiny-solid">
-        <h2>IMU-Based Dead Reckoning</h2>
-        <div class="image-list">
-            <img src="assets/NUance_600.png" />
-            <img src="assets/Dead_Reckoning.png" />
-            <ul>
-                <li>Designed and implemented a sensor fusion algorithm for IMU-based dead reckoning, integrating accelerometer, gyroscope, and magnetometer data to estimate 2D trajectories.</li>
-                <li>Developed drivers for a sensor data acquisition system in ROS2 to synchronize IMU and GPS inputs, capturing precise vehicle dynamics over varied driving routes and refining navigation accuracy through data preprocessing.</li>
-                <li>Calibrated magnetometer data to correct for hard-iron and soft-iron distortions, utilizing ellipse fitting and outlier detection through Isolation Forest to ensure high-fidelity heading estimates.</li>  
-                <li>Developed a multi-filter solution for yaw angle estimation, calibrated through Mean Squared Error (MSE) minimization, effectively fusing gyroscope and magnetometer data to leverage both short-term responsiveness and long-term accuracy.</li>
-                <li>Demonstrated expertise in ROS-based multi-sensor integration, filtering methods, and sensor fusion principles, translating raw sensor data into actionable insights for autonomous navigation applications.</li>
-            </ul>
+        <div class="pdf-viewer">
+          <h4>Technical Documentation</h4>
+          <iframe src="assets/NEUROAM_PAYLOAD_ASSEMBLY_INSTRUCTIONS.pdf" width="100%" height="600px">
+          </iframe>
+          <p class="pdf-fallback"><em>Note: If the PDF does not load, <a href="assets/NEUROAM_PAYLOAD_ASSEMBLY_INSTRUCTIONS.pdf">click here to view it</a>.</em></p>
         </div>
 
-        <hr class="tiny-solid">
-        <h2>IEEE SoutheastCon Hardware & Design Competition 2024</h2>
-        <div class="image-list">
-            <img src="assets/IEEE24_Bot_600_bold.png" />
-            <video width="360" height="480" controls loop autoplay muted>
-                <source src="assets/Bot.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <ul>
-                <li>Earned first place in the design competition and obtained the top 3 scores in the hardware competition, demonstrating exceptional innovation and technical proficiency.</li>  
-                <li>Engineered and deployed a state machine in Python and C++ coupled with ROS, integrating various electro-mechanical subsystems seamlessly and conducting thorough testing to ensure system robustness.</li>
-                <li>Directed the development of a computer vision system employing color detection techniques for specific object identification, enhanced by morphological operations to effectively filter image noise.</li>
-                <li>Implemented the use of contours and contour properties to determine 3D pose and position, translating image data into real-world coordinates for accurate object localization.</li>
-                <li>Applied polynomial regression to minimize localization error, utilizing experimental data collection to enhance the accuracy and reliability of the system.</li>
-                <li>Conducted precise camera calibration to minimize distortion on a wide field-of-view camera, ensuring accurate and undistorted visual data.</li>
-                <li>Credits to Chris Bass for CAD modeling, mechanism design, manufacturing, & full 6dof arm implementation, Max Turcios for software development and integration, and Zach Price for PCB, sensor integration, and bridge design.</li>
+      </div>
+    </article>
 
-            </ul>
+    <hr class="entry-divider">
+
+    <!-- COLMAP -->
+    <article class="portfolio-entry">
+  <header class="entry-header">
+    <div class="entry-meta">
+      <span class="type-tag">Class Project</span>
+      <span class="date">Autonomous Field Robotics</span>
+    </div>
+    <h3>Machine-Learning-Based COLMAP & PyCOLMAP</h3>
+    <div class="tech-stack">
+      <span>COLMAP</span> <span>SfM</span> <span>C++</span> <span>Python</span>
+    </div>
+  </header>
+
+  <div class="entry-content">
+    <figure class="full-width"> <img src="assets/colmap_python_comparison.jpg" alt="PyCOLMAP Results Comparison">
+      <figcaption>PyCOLMAP Results Comparison.</figcaption>
+    </figure>
+
+    <div class="small-grid">
+      <figure>
+         <img src="assets/colmap_sift_flann.gif" alt="COLMAP SIFT and FLANN Matching">
+         <figcaption>COLMAP SIFT and FLANN Matching.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/colmap_sp_lg.gif" alt="COLMAP SuperPoint and LightGlue Matching">
+        <figcaption>COLMAP SuperPoint and LightGlue Matching.</figcaption>
+      </figure>
+      <figure>
+         <img src="assets/colmap_disk_lg.gif" alt="COLMAP DISK and LightGlue Matching">
+         <figcaption>COLMAP DISK and LightGlue Matching.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/colmap_loftr_a.gif" alt="COLMAP LoFTR Matching">
+        <figcaption>COLMAP LoFTR Matching.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/colmap_loftr_b.gif" alt="COLMAP LoFTR Matching and Camera Extrinsics">
+        <figcaption>COLMAP LoFTR Matching & Camera Extrinsics.</figcaption>
+      </figure>
+    </div> </div>
+    </article>
+
+    <hr class="entry-divider">
+
+    <!-- IMU-Based Dead Reckoning -->
+    <article class="portfolio-entry">
+      <header class="entry-header">
+         <div class="entry-meta">
+          <span class="type-tag">Class Project</span>
+          <span class="date">Robotics Sensing and Navigation</span>
+        </div>
+        <h3>IMU-Based Dead Reckoning</h3>
+        <div class="tech-stack">
+          <span>Python</span> <span>Pandas</span> <span>ROS2</span> <span>Data Visualization</span>
+        </div>
+        <div class="small-grid">
+        <figure>
+             <img src="assets/imu_dr_position.png" alt="IMU Dead Reckoning Position Plot">
+             <figcaption>IMU Dead Reckoning Position Plot.</figcaption>
+        </figure>
+        <figure>
+             <img src="assets/imu_dr_mag_calibration_xy_comparison.png" alt="IMU Magnetometer Calibration XY Comparison">
+             <figcaption>IMU Magnetometer Calibration XY Comparison.</figcaption>
+        </figure>
+        <figure>
+             <img src="assets/imu_dr_velocity_corrected.png" alt="IMU Velocity Corrected Plot">
+             <figcaption>IMU Velocity Corrected Plot.</figcaption>
+        </figure>
+        <figure>
+             <img src="assets/imu_dr_yaw_final_comp.png" alt="IMU Yaw Final Comparison">
+             <figcaption>IMU Yaw Final Comparison.</figcaption>
+        </figure> 
+     </div>
+      </header>
+
+      <div class="entry-content">
+
+        <div class="pdf-viewer">
+          <h4>Technical Report</h4>
+          <iframe src="assets/imu_dr_report.pdf" width="100%" height="600px">
+          </iframe>
+          <p class="pdf-fallback"><em>Note: If the PDF does not load, <a href="assets/imu_dr_report.pdf">click here to view it</a>.</em></p>
         </div>
 
-        <hr class="tiny-solid">
-        <h2>X650 Drone Custom Stereo Camera Mount</h2>
-        <div class="image-list">
-            <img src="assets/DRONE_600.png" />
-            <ul>
-                <li>Designed and manufactured a rigid stereo camera mount for a modified X650 Drone.</li>  
-                <li>Redesigned component layout and wiring for improved accessibility and maintenance.</li>
-                <li>Designed covers for sensitive electronic components to protect them from environmental factors.</li>
-                <li>Materials used include: Delrin, 6061 aluminum, cast acrylic, and PLA.</li>
-                <li>Manufacturing processes include: Water jetting, laser cutting, 3D printing, tapping.</li>
-            </ul>
+      </div>
+    </article>
+
+    <hr class="entry-divider">
+
+    <!-- IMU-Noise Characterization & Allan Variance -->
+    <article class="portfolio-entry">
+      <header class="entry-header">
+         <div class="entry-meta">
+          <span class="type-tag">Class Project</span>
+          <span class="date">Robotics Sensing and Navigation</span>
+        </div>
+        <h3>IMU Noise Characterization & Allan Variance</h3>
+        <div class="tech-stack">
+          <span>Python</span> <span>Pandas</span> <span>ROS2</span> <span>Data Visualization</span>
+        </div>
+      </header>
+
+      <div class="entry-content">
+
+        <div class="pdf-viewer">
+          <h4>Technical Report</h4>
+          <iframe src="assets/avar_report.pdf" width="100%" height="600px">
+          </iframe>
+          <p class="pdf-fallback"><em>Note: If the PDF does not load, <a href="assets/avar_report.pdf">click here to view it</a>.</em></p>
         </div>
 
-        <hr class="tiny-solid">
-        <h2>IEEE SoutheastCon Hardware Competition 2023</h2>
-        <div class="image-list">
-            <img src="assets/IEEE23_Bot_600.png" />
-            <ul>
-                <li>Led the development of a computer vision system deployed on a Raspberry Pi 4B platform, augmented with a Coral USB Accelerator, delivering real-time object analysis capabilities.</li>  
-                <li>Employed principal component analysis (PCA) to accurately assess the orientation of diverse objects, such as rubber duckies and 3D-printed cylinders, enhancing overall object recognition accuracy.</li>
-                <li>Integrated EfficientDet2 to precisely determine the object class, enabling seamless identification and classification of target objects within the system.</li>
-                <li>Leveraged the robust OpenCV library to implement a placement verification mechanism, ensuring objects were positioned correctly and ready for smooth progression to the subsequent processing stage.</li>
-            </ul>
+      </div>
+    </article>
+
+    <hr class="entry-divider">
+
+    <!-- IEEE SouthEastCon Design & Hardware Competition -->
+    <article class="portfolio-entry">
+      <header class="entry-header">
+        <div class="entry-meta">
+          <span class="type-tag">Competition & Class Project</span>
+          <span class="date">IEEE SouthEastCon 2024 & Senior Design </span>
         </div>
-        
-        <hr class="tiny-solid">
-        <h2>Sumo Bot Competition</h2>
-        <div class="image-list">
-            <img src="assets/Pacifist_SumoBot_600.png" />
-            <ul>
-                <li>Secured second place in a sumo bot competition, showcasing robust performance and strategic prowess.</li>
-                <li>Designed and manufactured a fully functional battle bot, encompassing 3D modeling & printing, machining, electrical wiring, and programming to ensure comprehensive functionality.</li>  
-                <li>Implemented a triangular omnidirectional wheel motion system to enhance maneuverability and agility, ensuring swift and precise movement.</li>
-                <li>Developed a 360° bumper sensor system using parallel-in serial-out shift registers and a sonar sensor, enabling instant detection of incoming attacks from all directions around the bot.</li>
-                <li>Approached the project with an unconventional yet successful methodology, emphasizing innovation and effective problem-solving.</li>
-            </ul>
+        <h3>IEEE SouthEastCon Design & Hardware Competition</h3>
+        <div class="tech-stack">
+          <span>Linux</span> <span>ROS</span> <span>Raspberry Pi</span> <span>OpenCV</span> <span>Image Processing</span>
         </div>
+      </header>
 
-        <hr class="tiny-solid">
-        <h2>Autonomous Block Stacking Competition</h2>
-        <div class="image-list">
-            <img src="assets/QARM_No_Blocks_600.png" />
-            <ul>
-                <li>Earned first place by developing the fastest and most efficient program for autonomous block stacking, demonstrating superior speed and accuracy in execution.</li>  
-                <li>Programmed a Quanser 4-degree-of-freedom robot paired with an RGBD camera in Simulink and MATLAB, enabling autonomous identification and precise stacking of specific blocks using color filtering in the CIELAB (L*a*b*) color space.</li>
-                <li>Thoroughly researched and implemented comprehensive documentation to optimize system performance and ensure seamless integration of all functionalities.</li>
-                <li>Integrated a flip-off enabled vision system utilizing corner detection to initiate the robot's search, pick, and place actions based on a visual cue.</li>
-            </ul>
-        </div>
+      <div class="entry-content">
+        <div class="media-gallery">
+            <figure>
+                <video autoplay loop muted playsinline controls preload="metadata">
+                    <source src="assets/IEEE24_bot.mp4#t=2,18" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Robot successfully navigating the course.</figcaption>
+            </figure>
 
-        <!-- 
-        <video width="320" height="240" controls loop autoplay muted>
-            <source src="assets/main_scan.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        -->
+            <figure>
+                <img src="assets/IEEE24_robot_award.png" alt="IEEE SouthEastCon Robot and Award">
+                <figcaption>Robot and 1st Place Award.</figcaption>
+            </figure>
 
-        <hr class="solid">
-        <h1>- S K I L L S -</h1>
-        <hr class="solid">
+            <figure>
+                <img src="assets/IEEE24_team.PNG" alt="IEEE SouthEastCon Team Photo">
+                <figcaption>UNCA Team.</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/IEEE24_bot.PNG" alt="CAD Model of Robot">
+                <figcaption>CAD Model of Robot.</figcaption>
+            </figure>
 
-        <div class="skills">
-            <div class="icon_block">
-                <img width="80" height="80" src="assets/icons8-3d-printer-80.png" style="font-size: 75px; margin: 0px 15px;"/>
-                <img width="75" height="75" src="assets/icons8-solidworks-100.png" style="font-size: 75px; margin: 0px 15px;"/>
-
-            </div>
-            <div class="icon_block">
-                <i class="devicon-python-plain-wordmark" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-c-plain" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-cplusplus-plain" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-matlab-plain" style="font-size: 75px; margin: 0px 15px;"></i>
-            </div>
-            <div class="icon_block">
-                <i class="devicon-tensorflow-original-wordmark" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-keras-plain-wordmark" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-opencv-plain-wordmark" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-numpy-plain-wordmark" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-pandas-plain-wordmark" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-matplotlib-plain-wordmark" style="font-size: 75px; margin: 0px 15px;"></i>
-            </div>
-            <div class="icon_block">
-                <i class="devicon-raspberrypi-plain-wordmark" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-arduino-plain-wordmark" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-ros-original-wordmark" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-linux-plain" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-ubuntu-plain-wordmark" style="font-size: 75px; margin: 0px 15px;"></i>
-            </div>
-            <div class="icon_block">
-                <i class="devicon-git-plain-wordmark" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-github-original-wordmark" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-illustrator-plain" style="font-size: 75px; margin: 0px 15px;"></i>
-                <i class="devicon-photoshop-plain" style="font-size: 75px; margin: 0px 15px;"></i>
-            </div>
-            <div>
-                <img width="75" height="75" src="assets/icons8-spain-100.png" style="font-size: 75px; margin: 0px 15px;"/>
-                <img width="75" height="75" src="assets/icons8-usa-100.png" style="font-size: 75px; margin: 0px 15px;"/>
-            </div>
+            <figure>
+                <img src="assets/IEEE24_uncalibrated.png" alt="Uncalibrated camera image">
+                <figcaption>Uncalibrated camera image.</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/IEEE24_calibrated.png" alt="Calibrated camera image">
+                <figcaption>Calibrated camera image.</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/IEEE24_detection.png" alt="Detection and localization of objects">
+                <figcaption>Detection and localization of objects.</figcaption>
+            </figure>
             
-        </div>
-        <hr class="solid">
-        <hr class="solid">
-
-
         
+        </div>
+
+        <div class="pdf-viewer">
+          <h4>Technical Report</h4>
+          <iframe src="assets/IEEE24_reportpdf.pdf" width="100%" height="600px">
+          </iframe>
+          <p class="pdf-fallback"><em>Note: If the PDF does not load, <a href="assets/IEEE24_report.pdf">click here to view it</a>.</em></p>
+        </div>
+    </article>
+
+    <hr class="entry-divider">
+
+    <!-- Camouflaged Cuttlefish Detection -->
+     <article class="portfolio-entry">
+  <header class="entry-header">
+     <div class="entry-meta">
+      <span class="type-tag">Class Project</span>
+      <span class="date">Image Processing and Pattern Recognition</span>
     </div>
-    
-    
-    <footer class="footer">
-    </footer>
+    <h3>Camouflaged Cuttlefish Detection using Classic and Deep Learning Techniques</h3>
+    <div class="tech-stack">
+      <span>MATLAB</span> <span>Python</span> <span>Image Processing</span> <span>Pattern Recognition</span>
+    </div>
+  </header>
+
+  <div class="entry-content">
+    <figure class="full-width">
+        <img src="assets/cuttlefish_83246588_corrections.png" alt="Enhanced Cuttlefish Image">
+        <figcaption>Pre-processing.</figcaption>
+    </figure>
+
+    <div class="small-grid">
+        <figure>
+            <img src="assets/cuttlefish_83246588_cluster_map.png" alt="Cluster Map of Cuttlefish after K-Means Segmentation">
+            <figcaption>Cluster map after K-Means segmentation.</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/cuttlefish_83246588_eval.png" alt="Evaluation Metrics for Cuttlefish Detection">
+            <figcaption>Evaluation metrics for detection performance.</figcaption>
+        </figure>
+    </div>
+
+    <figure class="full-width">
+        <img src="assets/cuttlefish_83246588_result.png" alt="Detection Result of Cuttlefish">
+        <figcaption>Detection result.</figcaption>
+    </figure>
+
+    <div class="pdf-viewer">
+      <h4>Technical Report</h4>
+      <iframe src="assets/cuttlefish_report.pdf" width="100%" height="600px"></iframe>
+      <p class="pdf-fallback"><em>Note: If the PDF does not load, <a href="assets/cuttlefish_report.pdf">click here to view it</a>.</em></p>
+    </div>
+  </div>
+    </article>
+
+
+    <!-- GPS Performance & Error Analysis -->
+    <article class="portfolio-entry">
+      <header class="entry-header">
+         <div class="entry-meta">
+          <span class="type-tag">Class Project</span>
+          <span class="date">Robotics Sensing and Navigation</span>
+        </div>
+        <h3>GPS Performance & Error Analysis</h3>
+        <div class="tech-stack">
+          <span>Python</span> <span>Pandas</span> <span>Data Visualization</span>
+        </div>
+      </header>
+
+      <div class="entry-content">
+
+        <div class="pdf-viewer">
+          <h4>Technical Report</h4>
+          <iframe src="assets/gps_report.pdf" width="100%" height="600px">
+          </iframe>
+          <p class="pdf-fallback"><em>Note: If the PDF does not load, <a href="assets/gps_report.pdf">click here to view it</a>.</em></p>
+        </div>
+
+      </div>
+    </article>
+
+    <hr class="entry-divider">
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Carlos Anzola.</p>
+</footer>
+
 </body>
 </html>
