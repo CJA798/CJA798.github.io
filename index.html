@@ -65,7 +65,7 @@
       </div>
     </div>
   </section>
-
+<!--  
   <section id="skills">
     <h2>Technical Competencies</h2>
     <div class="skill-grid">
@@ -83,7 +83,7 @@
       </div>
     </div>
   </section>
-
+-->
   <hr class="divider">
 
   <section id="portfolio">
@@ -99,13 +99,29 @@
         </div>
         <h3>NeuROAM: Robotic Observation & Mapping Payload</h3>
         <div class="tech-stack">
-          <span>SolidWorks</span> <span>ROS2</span> <span>Rapid Prototyping</span> <span>Sensor Fusion</span>
+          <span>SolidWorks</span> <span>ROS2</span> <span>Rapid Prototyping</span>
+          <span>3D Printing</span> <span>Laser Cutting</span>  <span>Waterjet</span> <span>Tapping</span> <span>Drilling</span>
+          <span>Soldering</span> <span>Cable Fabrication</span> <span>Circuit Design</span> <span>Documentation</span>
         </div>
       </header>
 
       <div class="entry-content">
-        <p><strong>Objective:</strong> Design a modular sensor payload (LiDAR, Stereo Camera, IMU, Radio, GPS) capable of mounting on different robot platforms (Boston Dynamics Spot, Unitree Go2|Go2W|G1, AgileX Hunter|Scout).</p>
-        
+        <div class="project-description">
+            <p>Designed and built a modular sensor payload for multi-platform data collection, supporting robots such as Boston Dynamics <strong>SPOT</strong>, Unitree <strong>Go2, Go2W, & G1</strong>, and AgileX <strong>Scout & Hunter</strong>.</p>
+            <ul class="highlight-list">
+                <li>Integrated a high-fidelity sensor suite including <strong>stereo cameras, LiDAR, IMU, GPS, and radio </strong> communication.</li>
+                <li>Developed full CAD assemblies in SolidWorks to ensure mechanical compatibility across diverse robots.</li>
+                <li>Fabricated custom dampers and mounting hardware to mitigate vibration noise affecting IMU data.</li>
+                <li>Executed end-to-end electrical integration, including custom cable fabrication (JST, Dupont, USB, RJ45, barrel jack) with sleeving and heat-shrink finishing.</li>
+                <li>Successfully assembled and deployed 8 payloads, performing routine hardware maintenance and field-reliability inspections.</li>
+                <li>Documented manufacture, assembly instructions, and maintenance procedures to facilitate future builds and repairs.</li>
+                <li>Project repository: <a href="https://github.com/neufieldrobotics/NeuROAM">https://github.com/neufieldrobotics/NeuROAM</a></li>
+            </ul>
+            <p class="credits">
+                <strong>Credits:</strong> Developed in collaboration with <strong>Jasen Levoy</strong> (Design consultant) and <strong>Nikolas Sanderson</strong> (Assembly).
+            </p>
+        </div>
+
         <div class="media-gallery">
           <figure>
             <img src="assets/neuroam_payload.gif" alt="NeuROAM Assembly">
@@ -181,6 +197,14 @@
   </header>
 
   <div class="entry-content">
+    <ul class="highlight-list">
+        <li>Modified the <strong>C++ source code</strong> to embed <strong>SuperPoint, LightGlue, DISK, and LoFTR</strong> into the native GUI, allowing for high-performance ML-driven matching within the original software interface.</li>
+        <li>Developed a Python-based pipeline using PyCOLMAP to implement SuperPoint and SuperGlue for automatic reconstructions.</li>
+        <li>Code repository: <a href="https://github.com/CJA798/neucolmap">https://github.com/CJA798/neucolmap</a></li>
+    </ul>
+    <p class="credits">
+        <strong>Credits:</strong> Developed in collaboration with <strong>Srijan Dokania</strong> (LoFTR implementation).
+    </p>
     <figure class="full-width"> <img src="assets/colmap_python_comparison.jpg" alt="PyCOLMAP Results Comparison">
       <figcaption>PyCOLMAP Results Comparison.</figcaption>
     </figure>
@@ -220,8 +244,21 @@
         </div>
         <h3>IMU-Based Dead Reckoning</h3>
         <div class="tech-stack">
-          <span>Python</span> <span>Pandas</span> <span>ROS2</span> <span>Data Visualization</span>
+          <span>Sensor Fusion</span> <span>Python</span> <span>Pandas</span> <span>ROS2</span> <span>Data Visualization</span> <span>Linux</span>
         </div>
+        <div class="project-description">
+            <p>
+                I developed a sensor fusion pipeline to estimate 2D vehicle trajectories by integrating accelerometer, gyroscope, and magnetometer data. The project focused on overcoming the inherent drift and noise challenges of inertial navigation through rigorous data preprocessing and multi-filter estimation.
+            </p>
+            <ul class="highlight-list">
+                <li>Developed custom ROS2 drivers to synchronize high-frequency IMU data with GPS ground truth, ensuring precise temporal alignment for vehicle dynamics analysis.</li>
+                <li>Implemented a magnetometer calibration routine that corrected for hard-iron and soft-iron distortions using ellipse fitting and <strong>Isolation Forest</strong> for automated outlier detection.</li>
+                <li>Engineered a multi-filter solution for yaw estimation that fused high-frequency gyroscope responsiveness with the long-term stability of the magnetometer, utilizing <strong>Mean Squared Error (MSE) minimization</strong> to calibrate the filter weights.</li>
+                <li>GPS driver repository: <a href="https://github.com/CJA798/ROS2-BU-353N-GPS-Driver">https://github.com/CJA798/ROS2-BU-353N-GPS-Driver</a></li>
+                <li>IMU driver repository: <a href="https://github.com/CJA798/ROS2-VN100-IMU-AHRS-Driver">https://github.com/CJA798/ROS2-VN100-IMU-AHRS-Driver</a></li>
+            </ul>
+        </div>
+        
         <div class="small-grid">
         <figure>
              <img src="assets/imu_dr_position.png" alt="IMU Dead Reckoning Position Plot">
@@ -270,6 +307,16 @@
       </header>
 
       <div class="entry-content">
+        <div class="project-description">
+            <p>
+                I conducted an in-depth stochastic analysis of a VectorNav VN-100 IMU to characterize its noise profile and stability over time. By analyzing stationary data collected over multiple hours, I modeled the underlying error sources that limit the accuracy of long-term inertial navigation.
+            </p>
+            <ul class="highlight-list">
+                <li>Utilized <strong>Allan Variance (AVAR)</strong> analysis to isolate and quantify specific noise components, including Angle Random Walk, Bias Instability, and Rate Random Walk, for the accelerometer and gyroscope axes.</li>
+                <li>Implemented <strong>Power Spectral Density (PSD)</strong> estimations and time-series histograms to validate the white noise assumptions and identify environmental interference or sampling artifacts.</li>
+                <li>Validated manufacturer specifications with experimental results.</li>
+            </ul>
+        </div>
 
         <div class="pdf-viewer">
           <h4>Technical Report</h4>
@@ -293,10 +340,29 @@
         <h3>IEEE SouthEastCon Design & Hardware Competition</h3>
         <div class="tech-stack">
           <span>Linux</span> <span>ROS</span> <span>Raspberry Pi</span> <span>OpenCV</span> <span>Image Processing</span>
+          <span>Python</span> <span>C++</span> <span>Finite State Machine</span> <span>Camera Calibration</span> <span>Logging and Debugging</span>
+          <span>System Integration</span>
         </div>
       </header>
 
       <div class="entry-content">
+        <div class="project-description">
+            <p>
+                Served as the system integration and vision lead for the UNCA robotics team, earning <strong>1st Place</strong> in the design competition and securing the top three scores in the hardware competition.
+            </p>
+            <ul class="highlight-list">
+                <li>Engineered the central control architecture using a <strong>finite state machine</strong> in Python and C++, coordinating interactions between the drive base, a 6-DOF arm, and the vision system through ROS.</li>
+                <li>Developed a computer vision pipeline utilizing color segmentation and morphological filtering to identify and isolate target objects under variable lighting conditions.</li>
+                <li>Implemented a localization algorithm using contour analysis to calculate 3D pose and position, translating 2D image coordinates into real-world spatial data for the manipulator arm.</li>
+                <li>Reduced localization error by applying <strong>polynomial regression</strong> to experimental data, effectively compensating for lens distortion and perspective shifts.</li>
+                <li>Conducted camera calibration for a wide-field-of-view lens to eliminate geometric distortion and maintain high-fidelity visual feedback.</li>
+            </ul>
+
+            <p class="credits">
+                <strong>Team Credits:</strong> <strong>Chris Bass</strong> (CAD, Mechanism Design, 6-DOF Arm, Manufacture), <strong>Max Turcios</strong> (Software Integration), <strong>Zach Price</strong> (PCB Design & Sensor Integration),
+                <strong>Alex Haines</strong> & <strong>Jason Robinson</strong> (Misc).
+            </p>
+        </div>
         <div class="media-gallery">
             <figure>
                 <video autoplay loop muted playsinline controls preload="metadata">
@@ -347,48 +413,96 @@
     <hr class="entry-divider">
 
     <!-- Camouflaged Cuttlefish Detection -->
-     <article class="portfolio-entry">
-  <header class="entry-header">
-     <div class="entry-meta">
-      <span class="type-tag">Class Project</span>
-      <span class="date">Image Processing and Pattern Recognition</span>
-    </div>
-    <h3>Camouflaged Cuttlefish Detection using Classic and Deep Learning Techniques</h3>
-    <div class="tech-stack">
-      <span>MATLAB</span> <span>Python</span> <span>Image Processing</span> <span>Pattern Recognition</span>
-    </div>
-  </header>
+    <article class="portfolio-entry">
+    <header class="entry-header">
+        <div class="entry-meta">
+        <span class="type-tag">Class Project</span>
+        <span class="date">Image Processing and Pattern Recognition</span>
+        </div>
+        <h3>Camouflaged Cuttlefish Detection using Classic and Deep Learning Techniques</h3>
+        <div class="tech-stack">
+        <span>MATLAB</span> <span>Python</span> <span>Image Processing</span> <span>Computer Vision</span> <span>Pattern Recognition</span>
+        <span>Image Segmentation</span>
+        </div>
+    </header>
 
-  <div class="entry-content">
-    <figure class="full-width">
-        <img src="assets/cuttlefish_83246588_corrections.png" alt="Enhanced Cuttlefish Image">
-        <figcaption>Pre-processing.</figcaption>
-    </figure>
+    <div class="entry-content">
+        <div class="project-description">
+            <p>
+                Evaluated and implemented multiple image segmentation pipelines to detect camouflaged cuttlefish in complex underwater environments, comparing the performance and generalization of classical computer vision against deep learning architectures.
+            </p>
 
-    <div class="small-grid">
-        <figure>
-            <img src="assets/cuttlefish_83246588_cluster_map.png" alt="Cluster Map of Cuttlefish after K-Means Segmentation">
-            <figcaption>Cluster map after K-Means segmentation.</figcaption>
+            <p class="credits">
+                <strong>Credits:</strong> Developed in collaboration with <strong>Li Wang</strong> (U-Net implementation and analysis).
+            </p>
+        </div>
+
+        <figure class="full-width">
+            <img src="assets/cuttlefish_83246588_corrections.png" alt="Enhanced Cuttlefish Image">
+            <figcaption>Pre-processing.</figcaption>
         </figure>
-        <figure>
-            <img src="assets/cuttlefish_83246588_eval.png" alt="Evaluation Metrics for Cuttlefish Detection">
-            <figcaption>Evaluation metrics for detection performance.</figcaption>
+
+        <div class="small-grid">
+            <figure>
+                <img src="assets/cuttlefish_83246588_cluster_map.png" alt="Cluster Map of Cuttlefish after K-Means Segmentation">
+                <figcaption>Cluster map after K-Means segmentation.</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/cuttlefish_83246588_eval.png" alt="Evaluation Metrics for Cuttlefish Detection">
+                <figcaption>Evaluation metrics for detection performance.</figcaption>
+            </figure>
+        </div>
+
+        <figure class="full-width">
+            <img src="assets/cuttlefish_83246588_result.png" alt="Detection Result of Cuttlefish">
+            <figcaption>Detection result.</figcaption>
         </figure>
-    </div>
 
-    <figure class="full-width">
-        <img src="assets/cuttlefish_83246588_result.png" alt="Detection Result of Cuttlefish">
-        <figcaption>Detection result.</figcaption>
-    </figure>
-
-    <div class="pdf-viewer">
-      <h4>Technical Report</h4>
-      <iframe src="assets/cuttlefish_report.pdf" width="100%" height="600px"></iframe>
-      <p class="pdf-fallback"><em>Note: If the PDF does not load, <a href="assets/cuttlefish_report.pdf">click here to view it</a>.</em></p>
+        <div class="pdf-viewer">
+        <h4>Technical Report</h4>
+        <iframe src="assets/cuttlefish_report.pdf" width="100%" height="600px"></iframe>
+        <p class="pdf-fallback"><em>Note: If the PDF does not load, <a href="assets/cuttlefish_report.pdf">click here to view it</a>.</em></p>
+        </div>
     </div>
-  </div>
     </article>
 
+    <hr class="entry-divider">
+
+        <!-- X650 Drone -->
+    <article class="portfolio-entry">
+      <header class="entry-header">
+         <div class="entry-meta">
+          <span class="type-tag">Research Project</span>
+          <span class="date">Institute for Experiential Robotics: Field Robotics Lab</span>
+        </div>
+        <h3>X650 Drone Upgrade (In Progress...)</h3>
+        <div class="tech-stack">
+          <span>Hardware</span> <span>Lasercutting</span> <span>Waterjet</span> <span>3D Printing</span> <span>Wire Harnessing</span>
+        </div>
+      </header>
+
+      <div class="entry-content">
+
+        <div class="project-description">
+            <p>
+                Currently working on upgrading the mechanical and electrical systems of the lab's X650 drone platform to enhance maintainability and performance for outdoor field operations.
+            </p>
+        </div>
+
+        <div class="media-gallery">
+          <figure>
+             <img src="assets/drone_prototype.jpg" alt="X650 Drone Platform">
+             <figcaption>X650 Drone Platform First Prototype.</figcaption>
+          </figure>
+          <figure>
+             <img src="assets/drone_side.jpg" alt="X650 Drone Side View">
+             <figcaption>X650 Drone Side View.</figcaption>
+          </figure>
+
+      </div>
+    </article>
+
+    <hr class="entry-divider">
 
     <!-- GPS Performance & Error Analysis -->
     <article class="portfolio-entry">
@@ -399,11 +513,17 @@
         </div>
         <h3>GPS Performance & Error Analysis</h3>
         <div class="tech-stack">
-          <span>Python</span> <span>Pandas</span> <span>Data Visualization</span>
+          <span>Python</span> <span>Pandas</span> <span>Data Visualization</span> <span>Data Analysis</span>
         </div>
       </header>
 
       <div class="entry-content">
+
+        <div class="project-description">
+            <p>
+                Investigated the accuracy and reliability of GPS data under stationary and dynamic conditions, focusing on analyzing and quantifying the error in commercial-grade receivers.
+            </p>
+        </div>
 
         <div class="pdf-viewer">
           <h4>Technical Report</h4>

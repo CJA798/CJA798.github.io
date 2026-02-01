@@ -202,3 +202,39 @@ footer {
     grid-template-columns: 1fr; /* Stack images on very small screens */
   }
 }
+
+/* Styling for the new project descriptions */
+.project-description {
+  margin-bottom: 1.5rem;
+}
+
+.highlight-list {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+  list-style-type: square;
+}
+
+.highlight-list li {
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+}
+
+/* Ensures strong tags use your accent color subtly */
+.highlight-list strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.credits {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+.credits strong {
+  color: var(--text-main);
+  font-style: normal;
+}
